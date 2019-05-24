@@ -1,0 +1,4 @@
+/backend/britecore_be
+/backend/britecore_be/*
+/backend/src/db.sqlite3
+.DS_Store
