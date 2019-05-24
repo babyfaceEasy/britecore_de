@@ -32,3 +32,11 @@ class Field(models.Model):
 
     def __str__(self):
         return self.label
+
+
+class EnumValues(models.Model):
+    value = models.CharField(max_length=255)
+    enumField = models.ForeignKey(
+        Field, related_name="enumField", on_delete=models.CASCADE)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
