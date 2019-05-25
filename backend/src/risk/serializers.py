@@ -1,5 +1,6 @@
 from rest_framework import serializers
 from risk import models
+from rest_framework import pagination
 
 
 class EnumValuesSerializer(serializers.ModelSerializer):
